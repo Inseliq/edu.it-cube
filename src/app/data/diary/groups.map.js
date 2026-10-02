@@ -1,0 +1,45 @@
+export const diaryGroups = [
+  {
+    id: '1WEB-26',
+    course: 1,
+    title: '1WEB-26',
+    totalStudents: 12,
+    messenger: 'max',
+    students: [
+      { id: '1web-student-01', name: 'Богдан П.' },
+      { id: '1web-student-02', name: 'Матвей Е.' },
+      { id: '1web-student-03', name: 'Кирилл Ф.' },
+      { id: '1web-student-04', name: 'Тимофей К.' },
+      { id: '1web-student-05', name: 'Артём М.' },
+      { id: '1web-student-06', name: 'Кирилл З.' },
+      { id: '1web-student-07', name: 'Александр Л.' },
+      { id: '1web-student-08', name: 'Дмитрий Б.' },
+      { id: '1web-student-09', name: 'Родион М.' },
+      { id: '1web-student-10', name: 'Артём Ш.' },
+      { id: '1web-student-11', name: 'Михаил А.' },
+      { id: '1web-student-12', name: 'Максим Р.' },
+    ],
+  },
+  {
+    id: '2WEB-25',
+    course: 2,
+    title: '2WEB-25',
+    totalStudents: 11,
+    messenger: 'vk',
+    students: [
+      { id: '2web-student-01', name: 'Артём А.' },
+      { id: '2web-student-02', name: 'Давид М.' },
+      { id: '2web-student-03', name: 'Глеб М.' },
+      { id: '2web-student-04', name: 'Иван У.' },
+      { id: '2web-student-05', name: 'Егор Ш.' },
+      { id: '2web-student-06', name: 'Артём М.' },
+      { id: '2web-student-07', name: 'Максим Б.' },
+      { id: '2web-student-08', name: 'Степан Л.' },
+      { id: '2web-student-09', name: 'Артём К.' },
+      { id: '2web-student-10', name: 'Вадим К.' },
+      { id: '2web-student-11', name: 'Ярослав К.' },
+    ],
+  },
+]
+
+export const controlColumns = ['А1', 'А2', 'I', 'II', 'Итог']

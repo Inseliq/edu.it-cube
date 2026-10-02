@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
-  <rect x="2" y="2" width="60" height="60" rx="16" stroke="currentColor" stroke-width="3"/>
-  <path d="M18 23 32 15l14 8v18l-14 8-14-8V23Z" stroke="currentColor" stroke-width="3"/>
-  <path d="m25 28 7-4 7 4-7 4-7-4Zm7 4v11m-7-7 7 4 7-4" stroke="currentColor" stroke-width="2.5"/>
-  <text x="74" y="31" fill="currentColor" font-family="Arial,sans-serif" font-size="22" font-weight="800">IT-КУБ</text>
-  <text x="75" y="50" fill="currentColor" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">ПЕНЗА</text>
-</svg>

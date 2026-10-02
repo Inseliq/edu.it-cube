@@ -1,5 +1,34 @@
 import { Link } from 'react-router-dom'
 
-const baseUrl = import.meta.env.BASE_URL
-import '../../styles/css/main.css'
-export default function MainPage(){return <div className="page-shell main-page"><section className="hero"><div className="hero__copy"><span className="eyebrow">IT-Куб Пенза</span><h1 className="page-title">Будущее создаётся кодом.</h1><p className="page-lead">IT-Куб Пенза — пространство, где дети и подростки осваивают современные технологии, развивают цифровые навыки и создают свои первые проекты.</p><p className="hero__text">На сайте представлены курсы по веб-программированию для двух уровней обучения — от первых страниц до серверной разработки.</p><div className="hero__actions"><Link className="btn btn-primary" to="/courses">Перейти к курсам <span>→</span></Link><Link className="btn" to="/roadmap">Посмотреть программу</Link></div></div><div className="hero__visual card"><img src={`${baseUrl}images/hero-code.webp`} alt="Обучение веб-программированию"/><div className="hero__visual-label"><b>WEB DEVELOPMENT</b><span>учимся · создаём · развиваемся</span></div></div></section><section className="feature-grid"><article className="feature card"><span className="feature__icon">⌘</span><h3>Практика</h3><p>Не только теория — реальные задачи и собственные web-проекты.</p></article><article className="feature card"><span className="feature__icon">↗</span><h3>Постепенный рост</h3><p>Программа разделена на уровни, чтобы двигаться от простого к сложному.</p></article><article className="feature card"><span className="feature__icon">◇</span><h3>Современный web</h3><p>HTML, CSS, JavaScript, PHP, базы данных и CMS.</p></article></section><section className="about-grid"><div><span className="eyebrow">О направлении</span><h2>Код — это инструмент для создания.</h2><p>Курс по веб-программированию помогает познакомиться с устройством сайтов, научиться проектировать страницы и постепенно перейти к программированию.</p><ul><li>структура и оформление web-страниц;</li><li>алгоритмы и JavaScript;</li><li>PHP, SQL и серверная разработка;</li><li>работа над собственными проектами.</li></ul><Link className="btn btn-primary" to="/courses">Смотреть курсы</Link></div><img className="about-image" src={`${baseUrl}images/campus.webp`} alt="IT-Куб Пенза"/></section></div>}
+import { diaryGroups } from '../../data/diary/groups.map'
+import '../../styles/css/edu-main.css'
+
+export default function MainPage() {
+  return (
+    <div className="edu-home">
+      <div className="edu-home__inner">
+        <section className="edu-home__intro">
+          <span className="eyebrow">Educational Platform</span>
+          <h1>Журнал и домашние задания</h1>
+          <p>
+            Выберите учебную группу, чтобы открыть журнал посещаемости и оценок,
+            посмотреть темы занятий и домашние задания.
+          </p>
+        </section>
+
+        <section className="edu-group-grid" aria-label="Учебные группы">
+          {diaryGroups.map((group) => (
+            <Link className="edu-group-card" to={`/diary/${group.id}`} key={group.id}>
+              <div>
+                <span className="edu-group-card__course">Курс {group.course}</span>
+                <h2>{group.title}</h2>
+                <p>{group.totalStudents} учеников в группе</p>
+              </div>
+              <span className="edu-group-card__arrow">→</span>
+            </Link>
+          ))}
+        </section>
+      </div>
+    </div>
+  )
+}

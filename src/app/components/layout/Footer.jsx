@@ -1,3 +1,13 @@
-const baseUrl = import.meta.env.BASE_URL
+export default function Footer() {
+  const handleEmptyLink = (event) => event.preventDefault()
 
-export default function Footer(){return <footer className="site-footer"><div className="site-footer__inner"><img src={`${baseUrl}icons/logo.svg`} alt="IT-Куб Пенза"/><p>2026 год · IT-Куб Пенза</p></div></footer>}
+  return (
+    <footer className="site-footer">
+      <div className="site-footer__inner">
+        <p className="site-footer__copyright">2026 г. © Educational Platform / IT-Cube.</p>
+        <a className="site-footer__docs" href="" onClick={handleEmptyLink}>Документация</a>
+        <p className="site-footer__rights">Все права защищены</p>
+      </div>
+    </footer>
+  )
+}
