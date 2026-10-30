@@ -110,7 +110,7 @@ export const journalByGroup = {
       date: '24.10.2026',
       title: 'Figma от иллюстрации до интерактивного прототипа. Практика.',
       lessonUrl: '',
-      homework: '',
+      homework: 'Доделать практические работы из презентации (По возможности)',
       grades: {
         '1web-student-01': 'п',
         '1web-student-02': '',
